@@ -1,0 +1,72 @@
+/*
+    AppBar
+  */
+
+.app-bar {
+  padding: 8px 16px;
+  background-color: #333646;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__brand img {
+  width: 150px;
+  padding: 10px;
+}
+
+.app-bar .app-bar__navigation {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 8px;
+  background-color: #333646;
+  overflow: hidden;
+}
+
+.app-bar .app-bar__navigation.open {
+  display: flex;
+  left: 0;
+}
+
+.app-bar .app-bar__navigation ul li a {
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  color: wheat;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+  min-width: 44px;
+  min-height: 44px;
+}
+.app-bar .app-bar__navigation ul li a:hover {
+  color: #ff9100;
+}

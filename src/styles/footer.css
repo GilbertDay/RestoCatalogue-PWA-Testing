@@ -1,0 +1,31 @@
+/* Footer */
+footer {
+  background-color: #333646;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #ff9100;
+}
+
+footer a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: #fff;
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 50px;
+}

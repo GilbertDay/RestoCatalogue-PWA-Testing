@@ -1,0 +1,125 @@
+.restaurant {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  color: #fff;
+}
+
+.restaurant_label {
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.restaurant_label::after {
+  content: "";
+  margin-top: 16px;
+  display: block;
+  border-bottom: 0.5px solid #3a3636;
+}
+
+.catalog {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.catalog .card {
+  position: relative;
+  max-width: 350px;
+  height: 150px;
+  background: #333646;
+  margin: 40px 20px;
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 5px 5px 15px 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.catalog .card:hover,
+.card:focus {
+  background-color: #333646;
+  height: 100%;
+}
+
+.catalog .card .imgBx {
+  position: relative;
+  width: 260px;
+  top: -60px;
+  margin: auto;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.catalog .card .imgBx img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.catalog .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.catalog .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+.catalog .card:focus .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+.content .rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.content .rate img {
+  margin-right: 10px;
+}
+
+.content a {
+  margin: 0 0 10px 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+.content h2,
+a {
+  color: wheat;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.content a {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+.content a:hover {
+  color: #ff9100;
+}
+.content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.catalog .card .content .rate img {
+  width: 20px;
+}
